@@ -1,11 +1,12 @@
 import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
+import codechef from '../../assets/images/codechef.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Icon } from '@iconify/react';
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
   faSkype,
 } from '@fortawesome/free-brands-svg-icons'
 import { faHome, faUser, faEnvelope, faSuitcase } from '@fortawesome/free-solid-svg-icons'
@@ -16,7 +17,7 @@ const Sidebar = () => {
     <div className="nav-bar">
       <Link className="logo" to="/">
         <img src={LogoS} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        <img className="sub-logo" />
       </Link>
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">
@@ -39,7 +40,7 @@ const Sidebar = () => {
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            href="https://www.linkedin.com/in/shubham-savarn/"
             target="_blank"
             rel="noreferrer"
           >
@@ -48,7 +49,7 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://github.com/bobangajicsm"
+            href="https://github.com/shubhamsavarn"
             target="_blank"
             rel="noreferrer"
           >
@@ -57,16 +58,28 @@ const Sidebar = () => {
         </li>
         <li>
           <a
-            href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
-            rel="noreferrer"
+            href="https://www.codechef.com/users/shubhamsavarn"
             target="_blank"
+            rel="noreferrer"
           >
-            <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+            <Icon icon="simple-icons:codechef" />
           </a>
         </li>
         <li>
-          <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
+          <a
+            href="https://www.codechef.com/users/shubhamsavarn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <li>
+          <a
+            href="https://www.codechef.com/users/shubhamsavarn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Icon icon="simple-icons:codeforces" />
+          </a>
+        </li>
           </a>
         </li>
       </ul>

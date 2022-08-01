@@ -11,15 +11,16 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+<link rel="stylesheet" href="https://use.typekit.net/uwk7nxn.css"></link>
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-
-  useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+  const mystyle = {
+    fontFamily: "alegreya, serif",
+    fontWeight: "500",
+    fontStyle: "italic",
+    fontSize: "30px"
+  };
 
   return (
     <>
@@ -32,19 +33,8 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p>
-            I'm very ambitious front-end developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
-          </p>
-          <p align="LEFT">
-            I'm quietly confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
-          </p>
-          <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+          <p style={mystyle}>
+          I'm an undergrad student and full-stack web developer based in India.
           </p>
         </div>
 

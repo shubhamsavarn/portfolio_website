@@ -91,9 +91,14 @@
         }
       }
   
-      a.portfolio-link {
+      a.skills-link {
         &:after {
-          content: 'PORTFOLIO';
+          content: 'SKILLS';
+        }
+      }
+      a.work-link {
+        &:after {
+          content: 'MY WORK';
         }
       }
   

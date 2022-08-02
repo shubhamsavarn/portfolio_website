@@ -5,8 +5,15 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+<link rel="stylesheet" href="https://use.typekit.net/uwk7nxn.css"></link>
 
 const Contact = () => {
+  const mystyle = {
+    fontFamily: "alegreya, serif",
+    fontWeight: "500",
+    fontStyle: "italic",
+    fontSize: "20px"
+  };
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
   const sendEmail = (e) => {
@@ -32,7 +39,7 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p>
+          <p style={mystyle}>
             I am interested in freelance opportunities - especially ambitious or
             large projects. However, if you have other request or question,
             don't hesitate to contact me using below form either.
@@ -67,7 +74,7 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <input type="submit" className="flat-button" value="Submit" />
                 </li>
               </ul>
             </form>
